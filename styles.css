@@ -137,4 +137,10 @@ button:hover {
     margin: 0 auto 20px auto;
     border-radius: 10px;
 }
+.small-img {
+    max-width: 60%;
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
+}
 
