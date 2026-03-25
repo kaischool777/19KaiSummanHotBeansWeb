@@ -1,3 +1,4 @@
+/* GLOBAL */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -51,7 +52,7 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 
-/* Remove extra spacing on last column */
+/* RIGHT SECTION FIX */
 .right-section {
     margin-right: 0;
 }
@@ -131,16 +132,21 @@ button:hover {
     color: #333;
     font-weight: 500;
 }
+
+/* IMAGE SIZING — ABOUT PAGE */
 .left-section img {
     max-width: 60%;
     display: block;
     margin: 0 auto 20px auto;
     border-radius: 10px;
 }
-.small-img {
+
+/* IMAGE SIZING — COURSES + REQUIREMENTS */
+.small-img,
+.course-img,
+.req-img {
     max-width: 60%;
     display: block;
     margin: 0 auto 15px auto;
     border-radius: 10px;
 }
-
