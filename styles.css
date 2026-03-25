@@ -4,12 +4,18 @@ body {
     background-color: #F4F4F4;
 }
 
+/* HEADER */
 .header {
     background-color: #1E1E1E;
     color: white;
     padding: 20px;
 }
 
+.header img {
+    height: 67px;
+}
+
+/* NAVIGATION */
 .nav {
     background-color: #333;
     padding: 12px;
@@ -22,24 +28,52 @@ body {
     font-weight: bold;
 }
 
+.nav a:hover {
+    color: #E63946;
+}
+
+/* MAIN CONTENT LAYOUT */
 .main-content {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
     padding: 20px;
 }
 
-.left-section, .right-section {
+/* LEFT + RIGHT SECTIONS */
+.left-section,
+.right-section {
     background: white;
     padding: 20px;
-    margin-right: 20px;
     flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 
-.right-section img {
+/* Remove extra spacing on last column */
+.right-section {
+    margin-right: 0;
+}
+
+/* VIDEO */
+.video-container {
     width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hero-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /* FORMS */
-form input, form select, form textarea {
+form input,
+form select,
+form textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
@@ -51,25 +85,35 @@ button {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 6px;
 }
 
+button:hover {
+    background-color: #c72f3b;
+}
+
+/* STAFF PAGE */
 .staff-container {
     display: flex;
     padding: 20px;
+    gap: 20px;
 }
 
 .staff-box {
     background: white;
     padding: 20px;
-    margin-right: 20px;
     flex: 1;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 
 .staff-box img {
     width: 100%;
+    border-radius: 10px;
 }
 
+/* FOOTER */
 .footer {
     background-color: #1E1E1E;
     color: white;
@@ -78,10 +122,7 @@ button {
     margin-top: 20px;
 }
 
-.header img {
-    height: 67px;
-}
-
+/* DATE */
 #date-container {
     position: absolute;
     top: 10px;
@@ -89,11 +130,4 @@ button {
     font-size: 14px;
     color: #333;
     font-weight: 500;
-}
-
-.hero-video {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
-    object-fit: cover;
 }
