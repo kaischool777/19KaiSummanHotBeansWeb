@@ -131,3 +131,10 @@ button:hover {
     color: #333;
     font-weight: 500;
 }
+.left-section img {
+    max-width: 60%;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+}
+
